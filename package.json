@@ -1,6 +1,6 @@
 {
   "name": "react-tradingview-technical-analysis",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React component for rendering the TradingView Technical Analysis Widget",
   "main": "./index.js",
   "repository": {

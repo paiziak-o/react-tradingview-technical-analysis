@@ -35,7 +35,7 @@ class TechnicalAnalysis extends React.Component {
   };
 
   static defaultProps = {
-    containerId: 'tradingview-widget-container',      
+    containerId: 'tradingview-widget-container',
     interval: INTERVALS.ONE_MINUTE,
     width: 425,
     height: 450,
@@ -45,7 +45,7 @@ class TechnicalAnalysis extends React.Component {
     locale: 'en',
     autoSize: false,
   };
-  
+
   componentDidMount() {
     this.script = null;
 
@@ -65,8 +65,8 @@ class TechnicalAnalysis extends React.Component {
 
     const config = { ...this.props, };
     if (config.autoSize) {
-      autoSize.width = '100%';
-      autoSize.height = '100%';
+      config.width = '100%';
+      config.height = '100%';
     }
 
     this.script.text = JSON.stringify(config)
